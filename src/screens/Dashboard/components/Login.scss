@@ -1,0 +1,71 @@
+.logon-outer-container{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../assets/login-background.jpg);
+    background-size: contain;
+    .login-container{
+        background-color: #ffffff;
+        opacity: 0.97;
+        width: 36%;
+        // height: 350px;
+        padding: 25px;
+        border-radius: 10px;
+        -webkit-box-shadow: -1px 4px 15px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 4px 15px 0px rgba(0,0,0,0.75);
+        box-shadow: -1px 4px 15px 0px rgba(0,0,0,0.75);
+        h3{
+            text-align: center;
+            color: #797979;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+            margin-bottom: 5px;
+
+        label{
+            font-size: 12px;
+            margin: 0;
+        }
+        }
+        .react-datepicker-wrapper{
+            width: 100%;
+            input{
+                width: 100%;
+                border-radius: 5px;
+                margin-top: 15px;
+                padding: 4px;
+                color: #797979;
+            }
+        }
+        .Login-button{
+            width: 100%;
+            background-color: #9E9E9F;
+            border: none;
+            margin-top: 10px;
+
+        }
+        a{
+            color: #0c2c95;
+            cursor: pointer;
+            margin-top: 10px;
+            &:hover{
+                color: #092170;
+                text-decoration: underline;
+            }
+        }
+        p{
+            margin-top: 13px;
+            text-align: center;
+            color: #797979;
+            a{
+                color: #0c2c95;
+                cursor: pointer;
+                &:hover{
+                    color: #092170;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
