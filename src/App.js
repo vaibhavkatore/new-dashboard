@@ -6,13 +6,27 @@ import { Row, Col } from 'react-bootstrap';
 import Routes from "./routes";
 import "./App.css";
 import { library } from '@fortawesome/fontawesome-svg-core';
-// import ... from '@fortawesome/free-solid-svg-icons';
+import {
+    faPen,
+    faLayerGroup,
+    faFile,
+    faChartBar,
+    faEllipsisH,
+    faHome,
+    faBox
+} from '@fortawesome/free-solid-svg-icons';
 
 
 
 library.add(
  
-
+faPen,
+faLayerGroup,
+faFile,
+faChartBar,
+faEllipsisH,
+faHome,
+faBox
 )
 
 class App extends Component {
