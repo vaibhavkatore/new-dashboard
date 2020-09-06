@@ -1,12 +1,13 @@
 import React from 'react';
-import Dashboard from './components/Login';
+import Login from './components/Login';
 import Register from './components/Register'
 import ForgetPassword from './components/ForgetPassword';
+import Dashboard from './components/DashboardMarkup' 
 export default [
     {
         path: '/',
         exact: true,
-        component: () => <Dashboard />
+        component: () => <Login />
     },
     {
         path: '/register',
@@ -17,5 +18,10 @@ export default [
         path: '/forget-password',
         exact: true,
         component: () => <ForgetPassword />
+    },
+    {
+        path: '/dashboard',
+        exact: true,
+        component: () => <Dashboard />
     },
 ];
