@@ -11,7 +11,8 @@ class Login extends Component {
         super(props)
         this.state = {
             email: '',
-            password: ''
+            password: '',
+            loginValid:false
         }
     }
 
@@ -20,6 +21,9 @@ class Login extends Component {
 
        const  data = {
             email, password
+        }
+        if(email=="demo@demo.com" && password==123456){
+            this.props.history.push('/dashboard')
         }
         // Here goes API call
         this.props.actions.loginAction(data)
@@ -32,7 +36,7 @@ class Login extends Component {
         })
     }
     render() {
-        const {email, password} =this.state
+        const {email, password, loginValid} =this.state
         
         return (
             <div className="logon-outer-container">
@@ -48,7 +52,7 @@ class Login extends Component {
                             <Form.Control type="password" name="password" placeholder="password" value={password} onChange={this.onChange} />
                         </Form.Group>
                         <a onClick={() => this.props.history.push('/forget-password')}>Forget Password ?</a>
-                        <Button className="Login-button">Login</Button>
+                        <Button className="Login-button"  onClick={() => this.onLogin()}>Login</Button>
                         <p>Don't have an account? <a onClick={() => this.props.history.push('/register')}>Register</a></p>
                     </Form>
                 </div>

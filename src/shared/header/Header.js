@@ -4,50 +4,63 @@ import { withRouter } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Container, Row, Col, Button, ProgressBar } from 'react-bootstrap';
 import './Header.scss'
+
+// faBorderStyle,
+// faBell,
+// faUser
 class Header extends Component {
     render() {
         return (
             <>
-                <div className="header">
+            <div className="main-header">
+                <Row>
+                    <Col>
                     <ul>
                         <li>
-                            <Button className="buttons">
-                        <FontAwesomeIcon className="icons home" icon={["fas", "home"]} />
+                        <FontAwesomeIcon className="icons" icon={["fas", "check-square"]} />
+                        </li>
+                        <li>
+                        <FontAwesomeIcon className="icons" icon={["fas", "comment-alt"]} />
+                        </li>
+                        <li>
+                        <FontAwesomeIcon className="icons" icon={["fas", "envelope"]} />
+                        </li>
+                        <li>
+                        <FontAwesomeIcon className="icons" icon={["fas", "calendar-week"]} />
+                       
+                        </li>
+                        <li>
+                        <FontAwesomeIcon className="icons star" icon={["fas", "star"]} />
+                        </li>
 
-                                Dashboard
-                                </Button>
-                        </li>
-                        <li>
-                        <FontAwesomeIcon className="icons" icon={["fas", "box"]} />
-                        <span>Apps</span>
-                        </li>
-                        <li>
-                        <FontAwesomeIcon className="icons" icon={["fas", "layer-group"]} />
-                        <span>UI Eliments</span>
-                       
-                        </li>
-                        <li>
-                        <FontAwesomeIcon className="icons" icon={["fas", "pen"]} />
-                        <span>Forms & Tables</span>
-                       
-                        </li>
-                        <li>
-                        <FontAwesomeIcon className="icons" icon={["fas", "file"]} />
-                        <span>Pages</span>
-                       
-                        </li>
-                        <li>
-                        <FontAwesomeIcon className="icons" icon={["fas", "chart-bar"]} />
-                        <span>Chart & Maps</span>
-                        
-                        </li>
-                        <li>
-                        <FontAwesomeIcon className="icons" icon={["fas", "ellipsis-h"]} />
-                        <span>Others</span>
-                        
-                        </li>
                     </ul>
+                    </Col>
+                    <Col className="right-side text-right">
+                    <ul>
+                        <li>
+                            <span>English</span>
+                            </li>
+                        <li>
+                        <FontAwesomeIcon className="icons" icon={["fas", "border-style"]} />
+                        </li>
+                        <li>
+                        <FontAwesomeIcon className="icons" icon={["fas", "search"]} />
+                        </li>
+                        <li>
+                        <FontAwesomeIcon className="icons" icon={["fas", "bell"]} />
+                        </li>
+                    <li>
+                        <span style={{fontSize:13,fontWeight:'600'}}>John Doe</span>
+                    </li>
+                    <li>
+                    <FontAwesomeIcon className="icons user" icon={["fas", "user"]} />
+
+                    </li>
+                    </ul>
+                    </Col>
+                </Row>
             </div>
+               
             </>
         )
     }

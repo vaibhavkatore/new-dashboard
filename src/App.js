@@ -13,7 +13,16 @@ import {
     faChartBar,
     faEllipsisH,
     faHome,
-    faBox
+    faBox,
+    faCheckSquare,
+    faCommentAlt,
+    faEnvelope,
+    faCalendarWeek,
+    faStar,
+    faBorderStyle,
+    faBell,
+    faUser,
+    faSearch
 } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -26,7 +35,16 @@ faFile,
 faChartBar,
 faEllipsisH,
 faHome,
-faBox
+faBox,
+faCheckSquare,
+faCommentAlt,
+faEnvelope,
+faCalendarWeek,
+faStar,
+faBorderStyle,
+faBell,
+faUser,
+faSearch
 )
 
 class App extends Component {

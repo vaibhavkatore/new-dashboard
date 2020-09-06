@@ -6,9 +6,13 @@ import decorRight from '../../../assets/decore-right.png'
 import {Graph, Bars} from '../modules/staticFile'
 import avg1 from '../../../assets/avg1.png'
 import avg2 from '../../../assets/avg2.png'
-import Header from '../../../shared/header/Header'
+import Header from '../../../shared/dashboard-header/DashboardHeader'
+import MainHeader from '../../../shared/header/Header'
 const DashboardMarkup = (props) => {
     return (
+        <>
+            <MainHeader/>
+
         <Container className="dashboard-container">
             <Header/>
            <Row>
@@ -98,6 +102,7 @@ const DashboardMarkup = (props) => {
                </Col>
            </Row>
         </Container>
+        </>
     )
 }
 
